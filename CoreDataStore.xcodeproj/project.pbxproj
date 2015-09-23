@@ -10,6 +10,9 @@
 		265419B21BB28752002857A0 /* CoreDataStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 265419B11BB28752002857A0 /* CoreDataStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		265419B91BB28752002857A0 /* CoreDataStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265419AE1BB28752002857A0 /* CoreDataStore.framework */; settings = {ASSET_TAGS = (); }; };
 		265419BE1BB28752002857A0 /* CoreDataStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265419BD1BB28752002857A0 /* CoreDataStoreTests.swift */; };
+		265419CA1BB28768002857A0 /* CoreDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265419C81BB28768002857A0 /* CoreDataStore.swift */; settings = {ASSET_TAGS = (); }; };
+		265419CB1BB28768002857A0 /* NSManagedObject+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265419C91BB28768002857A0 /* NSManagedObject+Name.swift */; settings = {ASSET_TAGS = (); }; };
+		265419CD1BB28771002857A0 /* UITableViewController+DataFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265419CC1BB28771002857A0 /* UITableViewController+DataFetching.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		265419B81BB28752002857A0 /* CoreDataStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		265419BD1BB28752002857A0 /* CoreDataStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStoreTests.swift; sourceTree = "<group>"; };
 		265419BF1BB28752002857A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		265419C81BB28768002857A0 /* CoreDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStore.swift; sourceTree = "<group>"; };
+		265419C91BB28768002857A0 /* NSManagedObject+Name.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+Name.swift"; sourceTree = "<group>"; };
+		265419CC1BB28771002857A0 /* UITableViewController+DataFetching.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewController+DataFetching.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,9 @@
 			children = (
 				265419B11BB28752002857A0 /* CoreDataStore.h */,
 				265419B31BB28752002857A0 /* Info.plist */,
+				265419C81BB28768002857A0 /* CoreDataStore.swift */,
+				265419C91BB28768002857A0 /* NSManagedObject+Name.swift */,
+				265419CC1BB28771002857A0 /* UITableViewController+DataFetching.swift */,
 			);
 			path = CoreDataStore;
 			sourceTree = "<group>";
@@ -142,6 +151,7 @@
 		265419A51BB28752002857A0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "it-agile GmbH";
 				TargetAttributes = {
@@ -193,6 +203,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				265419CD1BB28771002857A0 /* UITableViewController+DataFetching.swift in Sources */,
+				265419CB1BB28768002857A0 /* NSManagedObject+Name.swift in Sources */,
+				265419CA1BB28768002857A0 /* CoreDataStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +320,7 @@
 		265419C31BB28752002857A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -317,12 +331,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = de.itagile.CoreDataStore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		265419C41BB28752002857A0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
