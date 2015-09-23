@@ -1,7 +1,7 @@
 import UIKit
 import CoreData
 
-extension UITableViewController {
+public extension UITableViewController {
 	
 	var fetchedResultsController: NSFetchedResultsController? {
 		return nil
