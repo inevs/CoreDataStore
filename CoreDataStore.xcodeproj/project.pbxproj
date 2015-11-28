@@ -8,11 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		265419B21BB28752002857A0 /* CoreDataStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 265419B11BB28752002857A0 /* CoreDataStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		265419B91BB28752002857A0 /* CoreDataStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265419AE1BB28752002857A0 /* CoreDataStore.framework */; settings = {ASSET_TAGS = (); }; };
+		265419B91BB28752002857A0 /* CoreDataStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265419AE1BB28752002857A0 /* CoreDataStore.framework */; };
 		265419BE1BB28752002857A0 /* CoreDataStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265419BD1BB28752002857A0 /* CoreDataStoreTests.swift */; };
-		265419CA1BB28768002857A0 /* CoreDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265419C81BB28768002857A0 /* CoreDataStore.swift */; settings = {ASSET_TAGS = (); }; };
-		265419CB1BB28768002857A0 /* NSManagedObject+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265419C91BB28768002857A0 /* NSManagedObject+Name.swift */; settings = {ASSET_TAGS = (); }; };
-		265419CD1BB28771002857A0 /* UITableViewController+DataFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265419CC1BB28771002857A0 /* UITableViewController+DataFetching.swift */; settings = {ASSET_TAGS = (); }; };
+		265419CA1BB28768002857A0 /* CoreDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265419C81BB28768002857A0 /* CoreDataStore.swift */; };
+		265419CB1BB28768002857A0 /* NSManagedObject+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265419C91BB28768002857A0 /* NSManagedObject+Name.swift */; };
+		265419CD1BB28771002857A0 /* UITableViewController+DataFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265419CC1BB28771002857A0 /* UITableViewController+DataFetching.swift */; };
+		2694245B1C09A310002CB4BC /* CoreDataStoreOSX.h in Headers */ = {isa = PBXBuildFile; fileRef = 2694245A1C09A310002CB4BC /* CoreDataStoreOSX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		269424621C09A310002CB4BC /* CoreDataStoreOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 269424581C09A310002CB4BC /* CoreDataStoreOSX.framework */; };
+		269424671C09A310002CB4BC /* CoreDataStoreOSXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269424661C09A310002CB4BC /* CoreDataStoreOSXTests.swift */; };
+		2694246F1C09A329002CB4BC /* CoreDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265419C81BB28768002857A0 /* CoreDataStore.swift */; };
+		269424701C09A33F002CB4BC /* NSManagedObject+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265419C91BB28768002857A0 /* NSManagedObject+Name.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,6 +27,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 265419AD1BB28752002857A0;
 			remoteInfo = CoreDataStore;
+		};
+		269424631C09A310002CB4BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 265419A51BB28752002857A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 269424571C09A310002CB4BC;
+			remoteInfo = CoreDataStoreOSX;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -35,6 +47,12 @@
 		265419C81BB28768002857A0 /* CoreDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStore.swift; sourceTree = "<group>"; };
 		265419C91BB28768002857A0 /* NSManagedObject+Name.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+Name.swift"; sourceTree = "<group>"; };
 		265419CC1BB28771002857A0 /* UITableViewController+DataFetching.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewController+DataFetching.swift"; sourceTree = "<group>"; };
+		269424581C09A310002CB4BC /* CoreDataStoreOSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreDataStoreOSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2694245A1C09A310002CB4BC /* CoreDataStoreOSX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataStoreOSX.h; sourceTree = "<group>"; };
+		2694245C1C09A310002CB4BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		269424611C09A310002CB4BC /* CoreDataStoreOSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataStoreOSXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		269424661C09A310002CB4BC /* CoreDataStoreOSXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStoreOSXTests.swift; sourceTree = "<group>"; };
+		269424681C09A310002CB4BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +71,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		269424541C09A310002CB4BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2694245E1C09A310002CB4BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				269424621C09A310002CB4BC /* CoreDataStoreOSX.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +94,8 @@
 			children = (
 				265419B01BB28752002857A0 /* CoreDataStore */,
 				265419BC1BB28752002857A0 /* CoreDataStoreTests */,
+				269424591C09A310002CB4BC /* CoreDataStoreOSX */,
+				269424651C09A310002CB4BC /* CoreDataStoreOSXTests */,
 				265419AF1BB28752002857A0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +105,8 @@
 			children = (
 				265419AE1BB28752002857A0 /* CoreDataStore.framework */,
 				265419B81BB28752002857A0 /* CoreDataStoreTests.xctest */,
+				269424581C09A310002CB4BC /* CoreDataStoreOSX.framework */,
+				269424611C09A310002CB4BC /* CoreDataStoreOSXTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +132,24 @@
 			path = CoreDataStoreTests;
 			sourceTree = "<group>";
 		};
+		269424591C09A310002CB4BC /* CoreDataStoreOSX */ = {
+			isa = PBXGroup;
+			children = (
+				2694245A1C09A310002CB4BC /* CoreDataStoreOSX.h */,
+				2694245C1C09A310002CB4BC /* Info.plist */,
+			);
+			path = CoreDataStoreOSX;
+			sourceTree = "<group>";
+		};
+		269424651C09A310002CB4BC /* CoreDataStoreOSXTests */ = {
+			isa = PBXGroup;
+			children = (
+				269424661C09A310002CB4BC /* CoreDataStoreOSXTests.swift */,
+				269424681C09A310002CB4BC /* Info.plist */,
+			);
+			path = CoreDataStoreOSXTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -103,6 +158,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				265419B21BB28752002857A0 /* CoreDataStore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		269424551C09A310002CB4BC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2694245B1C09A310002CB4BC /* CoreDataStoreOSX.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,13 +208,49 @@
 			productReference = 265419B81BB28752002857A0 /* CoreDataStoreTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		269424571C09A310002CB4BC /* CoreDataStoreOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2694246D1C09A310002CB4BC /* Build configuration list for PBXNativeTarget "CoreDataStoreOSX" */;
+			buildPhases = (
+				269424531C09A310002CB4BC /* Sources */,
+				269424541C09A310002CB4BC /* Frameworks */,
+				269424551C09A310002CB4BC /* Headers */,
+				269424561C09A310002CB4BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreDataStoreOSX;
+			productName = CoreDataStoreOSX;
+			productReference = 269424581C09A310002CB4BC /* CoreDataStoreOSX.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		269424601C09A310002CB4BC /* CoreDataStoreOSXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2694246E1C09A310002CB4BC /* Build configuration list for PBXNativeTarget "CoreDataStoreOSXTests" */;
+			buildPhases = (
+				2694245D1C09A310002CB4BC /* Sources */,
+				2694245E1C09A310002CB4BC /* Frameworks */,
+				2694245F1C09A310002CB4BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				269424641C09A310002CB4BC /* PBXTargetDependency */,
+			);
+			name = CoreDataStoreOSXTests;
+			productName = CoreDataStoreOSXTests;
+			productReference = 269424611C09A310002CB4BC /* CoreDataStoreOSXTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		265419A51BB28752002857A0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "it-agile GmbH";
 				TargetAttributes = {
@@ -160,6 +259,12 @@
 					};
 					265419B71BB28752002857A0 = {
 						CreatedOnToolsVersion = 7.0;
+					};
+					269424571C09A310002CB4BC = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					269424601C09A310002CB4BC = {
+						CreatedOnToolsVersion = 7.1.1;
 					};
 				};
 			};
@@ -177,6 +282,8 @@
 			targets = (
 				265419AD1BB28752002857A0 /* CoreDataStore */,
 				265419B71BB28752002857A0 /* CoreDataStoreTests */,
+				269424571C09A310002CB4BC /* CoreDataStoreOSX */,
+				269424601C09A310002CB4BC /* CoreDataStoreOSXTests */,
 			);
 		};
 /* End PBXProject section */
@@ -190,6 +297,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		265419B61BB28752002857A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		269424561C09A310002CB4BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2694245F1C09A310002CB4BC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -217,6 +338,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		269424531C09A310002CB4BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				269424701C09A33F002CB4BC /* NSManagedObject+Name.swift in Sources */,
+				2694246F1C09A329002CB4BC /* CoreDataStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2694245D1C09A310002CB4BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				269424671C09A310002CB4BC /* CoreDataStoreOSXTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -224,6 +362,11 @@
 			isa = PBXTargetDependency;
 			target = 265419AD1BB28752002857A0 /* CoreDataStore */;
 			targetProxy = 265419BA1BB28752002857A0 /* PBXContainerItemProxy */;
+		};
+		269424641C09A310002CB4BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 269424571C09A310002CB4BC /* CoreDataStoreOSX */;
+			targetProxy = 269424631C09A310002CB4BC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -372,6 +515,76 @@
 			};
 			name = Release;
 		};
+		269424691C09A310002CB4BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = CoreDataStoreOSX/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = de.shg.CoreDataStoreOSX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2694246A1C09A310002CB4BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = CoreDataStoreOSX/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = de.shg.CoreDataStoreOSX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		2694246B1C09A310002CB4BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CoreDataStoreOSXTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = de.shg.CoreDataStoreOSXTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2694246C1C09A310002CB4BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CoreDataStoreOSXTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = de.shg.CoreDataStoreOSXTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -391,12 +604,30 @@
 				265419C41BB28752002857A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		265419C51BB28752002857A0 /* Build configuration list for PBXNativeTarget "CoreDataStoreTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				265419C61BB28752002857A0 /* Debug */,
 				265419C71BB28752002857A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2694246D1C09A310002CB4BC /* Build configuration list for PBXNativeTarget "CoreDataStoreOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				269424691C09A310002CB4BC /* Debug */,
+				2694246A1C09A310002CB4BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2694246E1C09A310002CB4BC /* Build configuration list for PBXNativeTarget "CoreDataStoreOSXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2694246B1C09A310002CB4BC /* Debug */,
+				2694246C1C09A310002CB4BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
